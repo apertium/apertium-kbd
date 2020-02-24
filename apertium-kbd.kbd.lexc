@@ -1,0 +1,225 @@
+! Morphological Transducer for Adyghe
+
+Multichar_Symbols
+
+! Part of speech categories
+%<n%>   ! Noun
+%<v%>
+%<prn%>
+
+%<tv%>
+%<iv%>
+
+%<pers%>
+%<dem%>
+%<pos%>
+
+%<p1%>
+%<p2%>
+%<p3%>
+
+! Number morphology
+%<pl%>  ! Plural
+%<sg%>  ! Singular
+
+%<erg%> 
+%<abs%>
+%<ins%>
+%<adv%>
+
+! Other symbols
+%>      ! Morpheme boundary
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Root
+
+Pronouns ;
+Nouns ;
+Adjectives ;
+Verbs ; 
+
+Prefixes ; 
+
+LEXICON Prefixes 
+! 
+! Proprietary ;
+! Organic ; 
+
+! Subject ;
+
+Subject ; 
+
+LEXICON Subject
+
+:сэ Valency ; 
+:о Valency ; 
+:ма Valency ; 
+:тэ Valency ; 
+:шъо Valency ; 
+:ма Valency ; 
+
+LEXICON Valency
+
+! Causative 	гъэ~ [ʁa~] 	"to force, to make" 	гъэ-плъэн [ʁapɬan] ! "to make him look at"
+! Comitative 	дэ~ [da~] 	"with" 	д-еплъын [dajpɬən] ! "to look with"
+! Benefactive 	фэ~ [fa~] 	"for" 	ф-еплъын [fajpɬən] ! "to look for"
+! Malefactive 	шӏо~ [ʃʷʼa~] 	"against one's interest" 	шӏу-еплъын [ʃʷʼajpɬən] ! "to look against his interest"
+! Reflexive 	зэ~ [za~] 	"self" 	зэ-плъын [zapɬən] ! "to look at oneself" 
+
+%<caus%>:%>гъэ Verbs ; 
+%<coop%>:%>дэ Verbs ; 
+%<bene%>:%>фэ Verbs ; 
+%<male%>:%>шӏо Verbs ; 
+%<refl%>:%>зэ Verbs ; 
+
+LEXICON CASE-ERG
+
+%<erg%>:                     #  ;
+%<ins%>:%>кӏэ                # ;
+
+LEXICON CASES 
+
+
+%<def%>%<abs%>:%>р      # ; 
+%<def%>:%>м             CASE-ERG ; 
+%<ind%>%<ins%>:%>кӏэ    # ; 
+%<ind%>%<adv%>:%>эу     # ; 
+
+
+LEXICON N-кӏалэ 
+
+%<n%>: CASES ; 
+
+LEXICON N-дэпкъы
+
+%<n%>: CASES ; 
+
+LEXICON PRON-CASE
+
+%<abs%>:         # ; 
+%<erg%>:         # ; 
+%<ins%>:р%>кӏэ   # ;
+%<adv%>:р%>эу    # ; 
+
+LEXICON PRON-DEM-CASE 
+
+%<abs%>:%>р         # ; 
+%<erg%>:%>щ         # ; 
+%<ins%>:%>щ%>кӏэ   # ;
+%<adv%>:р%>эу    # ; 
+
+LEXICON A
+
+%<adj%>: # ; 
+
+LEXICON PRON-SG1
+
+%<prn%>%<pers%>%<p1%>%<sg%>: PRON-CASE  ; 
+
+LEXICON PRON-SG2
+
+%<prn%>%<pers%>%<p2%>%<sg%>: PRON-CASE  ; 
+
+LEXICON PRON-PL1
+
+%<prn%>%<pers%>%<p1%>%<pl%>: PRON-CASE  ; 
+
+LEXICON PRON-PL2
+
+%<prn%>%<pers%>%<p2%>%<pl%>: PRON-CASE  ; 
+
+LEXICON PRON-DEM
+
+%<prn%>%<dem%>:              PRON-DEM-CASE ; 
+%<prn%>%<dem%>%<pl%>:%>хэ    PRON-DEM-CASE ; 
+
+LEXICON PRON-POSS
+
+%<prn%>%<pos%>: # ; 
+
+LEXICON TENSE
+
+!Present 	~∅ 	макӏо /maːkʷʼa/ 	(s)he is going; (s)he goes
+!Preterite 	~агъэ /~aːʁa/ 	кӏуагъэ /kʷʼaːʁa/ 	(s)he went
+!Discontinuous past 	~гъагъ /~ʁaːʁ/ 	кӏогъагъ /kʷʼaʁaːʁ/ 	(s)he went (but not there anymore)
+!Pluperfect 	~гъагъ /~ʁaːʁ/ 	кӏогъагъ /kʷʼaʁaːʁ/ 	(s)he went a long time ago"; (s)he had gone"
+!Categorical Future 	~н /~n/ 	кӏон /kʷʼan/ 	(s)he will go
+!Factual Future 	~щт /~ɕt/ 	кӏощт /kʷʼaɕt/ 	(s)he will go, (s)he is about to go
+!Past continuous 	~щтыгъ 	кӏощтыгъ /kʷʼaɕtəʁ/ 	(s)he used to go; (s)he was going
+!Conditional perfect 	~щтыгъ 	кӏощтыгъ /kʷʼaɕtəʁ/ 	(s)he was going to go; (s)he would have gone
+!Future perfect 	~гъэщт /~ʁaɕt/ 	кӏуагъэщт /kʷʼaːʁaɕt/ 	(s)he will have gone
+!Recent past 	~гъакӏ /~ʁaːt͡ʃʼ/ 	кӏогъакӏ /kʷʼaʁaːt͡ʃʼ/ 	(s)he just (recently) went
+!Present Perfect 	~гъах /~ʁaːχ/ 	кӏогъах /kʷʼaʁaːx/ 	(s)he already went 
+
+%<past%>:%>ыгъ               # ; 
+%<pres%>:                    # ; 
+
+LEXICON NONFIN
+
+%<ger%>:%>н CASES ;
+
+LEXICON V-IV
+
+%<v%>%<iv%>: TENSE ; 
+%<v%>%<iv%>: NONFIN ; 
+
+LEXICON V-TV 
+
+%<v%>%<tv%>: TENSE ; 
+%<v%>%<tv%>: NONFIN ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          L E X I C O N                                  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Pronouns 
+
+сэ:сэ             PRON-SG1 ; ! "я"
+о:о               PRON-SG2 ; ! "ты"
+тэ:тэ             PRON-PL1 ; ! "мы"
+шъо:шъо           PRON-PL2 ; ! "вы"
+
+мы:мы             PRON-DEM ; ! ""
+мо:мо             PRON-DEM ; ! ""
+а:а               PRON-DEM ; ! ""
+
+сэсый:сэсый       PRON-POSS ; ! ""
+оуий:оуий         PRON-POSS ; ! ""
+ий:ий             PRON-POSS ; ! ""
+тэтый:тэтый       PRON-POSS ; ! ""
+шъошъуй:шъошъуй   PRON-POSS ; ! ""
+яй:яй             PRON-POSS ; ! ""
+
+
+LEXICON Nouns
+
+кӏалэ:кӏалэ N-кӏалэ ; ! "мальчик"
+дэпкъы:дэпкъы N-дэпкъы ; ! ""
+еджапӏэ:еджапӏэ N-дэпкъы ; ! "школа"
+профессор:профессор N-кӏалэ ; ! ""
+щысыгъэ:щысыгъэ N-кӏалэ ; ! ""
+тхьэматэ:тхьэматэ N-кӏалэ ; ! ""
+
+LEXICON Adjectives 
+
+дах:дах A ; ! "красивый"
+
+LEXICON Verbs 
+
+! I am forcing you to talk to them again
+! у-а-къы-дэ-сэ-гъэ-гущыӏэ-жьы
+! you (у) with them (а) from there (къы) together (дэ) I (сэ) am forcing (гъэ) to speak (гущыӏэн) again (жьы)
+! obj adv adv coop subj deriv root 
+! -6  -5  -4  -3   -2   -1     0    +1
+
+тхы:тхы                 V-TV ; ! "писать"
+гущыӏэ:гущыӏэ           V-TV ; ! ""
+кӏо:кӏо                 V-IV ; ! "идти"
+
+
+
+

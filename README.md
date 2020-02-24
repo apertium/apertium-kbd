@@ -1,1 +1,1 @@
-# apertium-kbd
+README
