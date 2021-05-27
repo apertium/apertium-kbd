@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Kabardian], [0.1.0], [ftyers@prompsit.com], [apertium-kbd], [http://wiki.apertium.org/wiki/Apertium-kbd])
+AC_INIT([Apertium Kabardian], [0.1.0], [ftyers@prompsit.com], [apertium-kbd], [https://wiki.apertium.org/wiki/Apertium-kbd])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
