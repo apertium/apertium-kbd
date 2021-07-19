@@ -1,0 +1,10 @@
+[03tAbeQG0phX#0] ^дах/дах\<adj\>$
+[/03tAbeQG0phX]
+[G2jhPfuV5grb#0] ^еджапIээу/еджапӏэ<n>\<ind\><adv>$
+[/G2jhPfuV5grb]
+[KD3FO0vy7lgv#0] ^еджапIэкIэ/еджапӏэ<n>\<ind\><ins>$
+[/KD3FO0vy7lgv]
+[MtUf6JJ5TqN6#0] ^профессормкIэ/профессор<n>\<def\><ins>$
+[/MtUf6JJ5TqN6]
+[U5LIS2nUkZFZ#0] ^тэгъэгущыӏэыгъ/\<caus\>гущыӏэ<v><tv>\<past\>$
+[/U5LIS2nUkZFZ]

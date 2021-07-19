@@ -185,7 +185,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "TODO test sentence" | apertium -d . kbd-morph | tee .test-mt
-	@echo "TODO test analysis results" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test
